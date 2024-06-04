@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.freepik.com/vector-gratis/tecnologia-red-futurista-azul_53876-100679.jpg?t=st=1717527604~exp=1717531204~hmac=b329e9e6a8c91b17f70d2f302027e7bd77d864ce8c99790256fefdb6f99d9381&w=900');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
+        }
+        header {
+            background-color: #00008B; /* Azul oscuro */
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+            margin: 2rem auto;
+            max-width: 1000px;
+            border-radius: 10px;
+        }
+        .section-title {
+            color: #00008B; /* Azul oscuro */
+            border-bottom: 2px solid #00008B;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        .about-container {
+            display: flex;
+            align-items: center;
+        }
+        .about-container img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 150px;
+            height: 150px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .contact-list {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-list li {
+            margin-bottom: 10px;
+        }
+        .contact-list i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página Personal</h1>
+    </header>
+    <nav>
+        <a href="#acerca-de-mi">Acerca de mí</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#formacion-academica">Formación Académica</a>
+        <a href="#conocimientos">Conocimientos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#aptitudes">Aptitudes</a>
+    </nav>
+    <div class="container">
+        <section id="acerca-de-mi">
+            <h2 class="section-title">Acerca de mí</h2>
+	    <div class="about-container">
+                <img src="https://i.imgur.com/q9sIkYL.jpeg" alt="Perfil CV">
+                <p>Hola soy Nahuel Juárez, tengo 24 años, soy estudiante avanzado de Ingeniería en Sistemas, apasionado de la tecnología y la programación, 		en búsqueda de una oportunidad de trabajo que me permita demostrar mis conocimientos ya adquiridos durante la carrera e ir formando mi 			perfil como ingeniero.</p>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2 class="section-title">Contacto</h2>
+            <p>Puedes contactarme a través de los siguientes medios:</p>
+	    <ul class="contact-list">
+                <li><i class="fas fa-envelope"></i> <a href="mailto:nahueljuarezbj@gmail.com">nahueljuarezbj@gmail.com</a></li><br>
+                <li><i class="fas fa-phone"></i> 3865325173</li><br>
+                <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/juarez-nahuel/" target="_blank">LinkedIn</a></li><br>
+		<li><i class="fas fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/A8vkKqPBPgB22wX86" target="_blank">Río Seco, Tucumán</a></li>
+            </ul>
+        </section>
+        <section id="formacion-academica">
+            <h2 class="section-title">Formación Académica</h2>
+	    <ul>
+                <li>2019 - Actualmente: INGENIERIA EN SISTEMAS DE INFORMACION<br>
+                        Universidad Tecnológica Nacional – Facultad Regional Tucumán</li><br>
+                <li>2012 – 2018: TECNICO EN ELECTRONICA<br>
+                                 Escuela Técnica N°1 de Río Seco</li>
+            </ul>
+        </section>
+        <section id="conocimientos">
+            <h2 class="section-title">Conocimientos</h2>
+	    <ul>
+                <li>Office: Amplio manejo del paquete de Microsoft Office (Word, PowerPoint y Excel).</li><br>
+                <li>POO: Desarrollo de aplicaciones en JAVA y C# utilizando el patrón MVC con persistencia en SQL.</li><br>
+                <li>SQL: Experiencia con SQL Queries y SQL Joins en proyectos realizados en el cursado.</li><br>
+                <li>Diseño Web: Tecnologías de desarrollo web (HTML, CSS, JavaScript).</li><br>
+                <li>Metodologías ágiles: Conocimiento en Scrum y uso de Trello.</li><br>
+                <li>Versionado: Manejo de Git y GitHub.</li><br>
+                <li>Gestión de proyectos: Uso de Microsoft Project.</li><br>
+		<li>Python: Análisis de datos utilizando bibliotecas como Matplotlib.</li>
+            </ul>
+        </section>
+        <section id="experiencia">
+            <h2 class="section-title">Experiencia</h2>
+	    <ul>
+                <li>UTN – Proyecto Transformación Digital<br>
+			Mayo a Noviembre-2023: Desarrollo y documentación de automatización de trámites</li><br>
+                <li>Proyectos de Software particulares</li>
+            </ul>
+        </section>
+        <section id="aptitudes">
+            <h2 class="section-title">Aptitudes</h2>
+	    <ul>
+                <li>Proactivo</li><br>
+                <li>Responsable</li><br>
+                <li>Manejo efectivo del tiempo</li><br>
+                <li>Adecuación al trabajo en equipo</li><br>
+                <li>Capacidad de adaptación rápida</li><br><br>
+            </ul>
+	    <br>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Nahuel Juarez. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
