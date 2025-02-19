@@ -170,41 +170,38 @@ footer {
   }
 }
 
-/* Estilo para el contenedor del traductor */
 #google_translate_element {
   position: absolute;
   top: 10px;
   right: 10px;
 }
 
-/* Ocultar elementos innecesarios */
+/* Ocultar todos los elementos originales de Google Translate */
 .goog-te-gadget-simple {
   background-color: transparent !important;
   border: none !important;
   padding: 0 !important;
+  font-size: 0 !important; /* Oculta el texto */
+  cursor: pointer;
 }
 
 .goog-te-gadget-simple span {
-  display: none;
+  display: none !important;
 }
 
-.goog-te-gadget-simple .goog-te-menu-value span:first-child {
+/* Mostrar el ícono de Font Awesome */
+.goog-te-gadget-simple:before {
+  content: '\f1ab'; /* Código del ícono de idioma de Font Awesome */
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-size: 20px;
+  color: #333; /* Color del ícono */
   display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0iTTIgMTJoMjAiLz48cGF0aCBkPSJNMTIgMmE5LjkgOS45IDAgMCAxIDcuNTEgMy40Mk0xMiAyYTkuOSA5LjkgMCAwIDAtNy41MSAzLjQyIi8+PC9zdmc+');
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.7;
+  cursor: pointer;
 }
 
-.goog-te-gadget-simple .goog-te-menu-value span:first-child:hover {
-  opacity: 1;
-}
-
-/* Asegurarse que el header tenga posición relativa */
-header {
-  position: relative;
+.goog-te-gadget-simple:hover:before {
+  color: #666; /* Color al pasar el mouse */
 }
 
 /* Ocultar la barra de Google Translate */
@@ -214,4 +211,9 @@ header {
 
 body {
   top: 0 !important;
+}
+
+/* Asegurarse que el header tenga posición relativa */
+header {
+  position: relative;
 }
