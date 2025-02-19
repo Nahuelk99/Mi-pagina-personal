@@ -170,17 +170,48 @@ footer {
   }
 }
 
+/* Estilo para el contenedor del traductor */
 #google_translate_element {
-  margin: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
-.goog-te-gadget {
-  font-family: inherit !important;
-}
-
+/* Ocultar elementos innecesarios */
 .goog-te-gadget-simple {
   background-color: transparent !important;
-  border: 1px solid #ccc !important;
-  padding: 5px !important;
-  border-radius: 4px !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.goog-te-gadget-simple span {
+  display: none;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value span:first-child {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0iTTIgMTJoMjAiLz48cGF0aCBkPSJNMTIgMmE5LjkgOS45IDAgMCAxIDcuNTEgMy40Mk0xMiAyYTkuOSA5LjkgMCAwIDAtNy41MSAzLjQyIi8+PC9zdmc+');
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.7;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value span:first-child:hover {
+  opacity: 1;
+}
+
+/* Asegurarse que el header tenga posición relativa */
+header {
+  position: relative;
+}
+
+/* Ocultar la barra de Google Translate */
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
 }
