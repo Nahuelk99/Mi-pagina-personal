@@ -3,49 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Language" content="es">
     <title>Mi Página Personal</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="stylesheet" href="App.css" />
-    <script
-      type="text/javascript"
-      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    ></script>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-          {
-            pageLanguage: "es",
-            includedLanguages: "en,es",
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-          },
-          "google_translate_element"
-        );
-      }
-    </script>
-    <script>
-      window.addEventListener("load", function () {
-        // Detecta el idioma del navegador
-        const userLang = navigator.language || navigator.userLanguage;
-
-        // Si el idioma preferido es inglés, traduce automáticamente
-        if (userLang.startsWith("en")) {
-          setTimeout(() => {
-            const selectElement = document.querySelector(".goog-te-combo");
-            if (selectElement) {
-              selectElement.value = "en";
-              selectElement.dispatchEvent(new Event("change"));
-            }
-          }, 1000);
-        }
-      });
-    </script>
   </head>
   <body>
     <header>
-      <div id="google_translate_element"></div>
       <h1>Bienvenido a Mi Página Personal</h1>
     </header>
     <nav>
