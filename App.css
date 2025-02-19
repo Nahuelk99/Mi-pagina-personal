@@ -170,12 +170,20 @@ footer {
   }
 }
 
-/* Actualiza estos estilos en tu App.css */
 #google_translate_element {
   position: absolute;
   top: 10px;
   right: 10px;
-  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  z-index: 1000;
+}
+
+/* Ocultar completamente los elementos originales de Google Translate */
+.goog-te-gadget {
+  font-size: 0 !important; /* Oculta todo el texto */
+}
+
+.goog-te-gadget img {
+  display: none !important; /* Oculta la imagen de Google */
 }
 
 .goog-te-gadget-simple {
@@ -190,22 +198,26 @@ footer {
   display: none !important;
 }
 
-/* Modificar el ícono para que sea visible en el header azul */
+.goog-te-gadget-simple img {
+  display: none !important;
+}
+
+/* Nuestro ícono personalizado */
 .goog-te-gadget-simple:before {
   content: '\f1ab';
   font-family: 'Font Awesome 6 Free';
   font-weight: 900;
-  font-size: 24px; /* Aumenté el tamaño */
-  color: white; /* Cambié el color a blanco */
+  font-size: 24px;
+  color: white;
   display: inline-block;
   cursor: pointer;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* Añadí sombra suave */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 .goog-te-gadget-simple:hover:before {
-  color: #ffa500; /* Color naranja al hover para que coincida con tu diseño */
-  transform: scale(1.1); /* Efecto de escala al hover */
-  transition: all 0.3s ease; /* Transición suave */
+  color: #ffa500;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 
 /* Ocultar la barra de Google Translate */
@@ -217,7 +229,6 @@ body {
   top: 0 !important;
 }
 
-/* Asegurarse que el header tenga posición relativa */
 header {
   position: relative;
 }
