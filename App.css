@@ -169,3 +169,18 @@ footer {
     flex: 1 0 50px; /* Flexbox item, at least 50px */
   }
 }
+
+#google_translate_element {
+  margin: 10px;
+}
+
+.goog-te-gadget {
+  font-family: inherit !important;
+}
+
+.goog-te-gadget-simple {
+  background-color: transparent !important;
+  border: 1px solid #ccc !important;
+  padding: 5px !important;
+  border-radius: 4px !important;
+}
