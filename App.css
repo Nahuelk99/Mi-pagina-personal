@@ -170,18 +170,19 @@ footer {
   }
 }
 
+/* Actualiza estos estilos en tu App.css */
 #google_translate_element {
   position: absolute;
   top: 10px;
   right: 10px;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
 
-/* Ocultar todos los elementos originales de Google Translate */
 .goog-te-gadget-simple {
   background-color: transparent !important;
   border: none !important;
   padding: 0 !important;
-  font-size: 0 !important; /* Oculta el texto */
+  font-size: 0 !important;
   cursor: pointer;
 }
 
@@ -189,19 +190,22 @@ footer {
   display: none !important;
 }
 
-/* Mostrar el ícono de Font Awesome */
+/* Modificar el ícono para que sea visible en el header azul */
 .goog-te-gadget-simple:before {
-  content: '\f1ab'; /* Código del ícono de idioma de Font Awesome */
+  content: '\f1ab';
   font-family: 'Font Awesome 6 Free';
   font-weight: 900;
-  font-size: 20px;
-  color: #333; /* Color del ícono */
+  font-size: 24px; /* Aumenté el tamaño */
+  color: white; /* Cambié el color a blanco */
   display: inline-block;
   cursor: pointer;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* Añadí sombra suave */
 }
 
 .goog-te-gadget-simple:hover:before {
-  color: #666; /* Color al pasar el mouse */
+  color: #ffa500; /* Color naranja al hover para que coincida con tu diseño */
+  transform: scale(1.1); /* Efecto de escala al hover */
+  transition: all 0.3s ease; /* Transición suave */
 }
 
 /* Ocultar la barra de Google Translate */
