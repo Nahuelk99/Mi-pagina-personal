@@ -154,22 +154,10 @@ footer {
 
 /* Estilos para la sección de proyectos */
 .section-title {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  position: relative;
-  padding-bottom: 0.5rem;
-}
-
-.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 3px;
-  background: linear-gradient(to right, #00008b, #007bff);
+  color: #00008b; / Azul oscuro /
+  border-bottom: 2px solid #00008b;
+  display: inline-block;
+  margin-bottom: 1rem;
 }
 
 /* Contenedor de proyectos */
